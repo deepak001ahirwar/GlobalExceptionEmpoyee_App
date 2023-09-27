@@ -1,0 +1,560 @@
+"2023-09-25 12:47:52 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 2016 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 12:47:52 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 12:47:52 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 12:47:53 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 12:47:53 - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+""2023-09-25 12:47:53 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.demo.controller.EmpoyeeServiceImp [Xlint:invalidAbsoluteTypeName]
+""2023-09-25 12:47:53 - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+""2023-09-25 12:47:53 - Application run failed
+"org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'projectingArgumentResolverBeanPostProcessor' defined in class path resource [org/springframework/data/web/config/ProjectingArgumentResolverRegistrar.class]: BeanPostProcessor before instantiation of bean failed; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.demo.controller.EmpoyeeServiceImp [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:537)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.registerBeanPostProcessors(PostProcessorRegistrationDelegate.java:270)
+	at org.springframework.context.support.AbstractApplicationContext.registerBeanPostProcessors(AbstractApplicationContext.java:765)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:567)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at com.example.demo.GlobalExceptionEmpoyeeAppApplication.main(GlobalExceptionEmpoyeeAppApplication.java:10)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration': Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: warning no match for this type name: com.example.demo.controller.EmpoyeeServiceImp [Xlint:invalidAbsoluteTypeName]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:628)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1352)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1195)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:213)
+	at org.springframework.aop.framework.autoproxy.BeanFactoryAdvisorRetrievalHelper.findAdvisorBeans(BeanFactoryAdvisorRetrievalHelper.java:91)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findCandidateAdvisors(AbstractAdvisorAutoProxyCreator.java:111)
+	at org.springframework.aop.aspectj.annotation.AnnotationAwareAspectJAutoProxyCreator.findCandidateAdvisors(AnnotationAwareAspectJAutoProxyCreator.java:92)
+	at org.springframework.aop.aspectj.autoproxy.AspectJAwareAdvisorAutoProxyCreator.shouldSkip(AspectJAwareAdvisorAutoProxyCreator.java:101)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessBeforeInstantiation(AbstractAutoProxyCreator.java:255)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1160)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeforeInstantiation(AbstractAutowireCapableBeanFactory.java:1135)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:531)
+	... 14 common frames omitted
+Caused by: java.lang.IllegalArgumentException: warning no match for this type name: com.example.demo.controller.EmpoyeeServiceImp [Xlint:invalidAbsoluteTypeName]
+	at org.aspectj.weaver.tools.PointcutParser.parsePointcutExpression(PointcutParser.java:319)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.buildPointcutExpression(AspectJExpressionPointcut.java:227)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.obtainPointcutExpression(AspectJExpressionPointcut.java:198)
+	at org.springframework.aop.aspectj.AspectJExpressionPointcut.getClassFilter(AspectJExpressionPointcut.java:177)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:226)
+	at org.springframework.aop.support.AopUtils.canApply(AopUtils.java:289)
+	at org.springframework.aop.support.AopUtils.findAdvisorsThatCanApply(AopUtils.java:321)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findAdvisorsThatCanApply(AbstractAdvisorAutoProxyCreator.java:128)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.findEligibleAdvisors(AbstractAdvisorAutoProxyCreator.java:97)
+	at org.springframework.aop.framework.autoproxy.AbstractAdvisorAutoProxyCreator.getAdvicesAndAdvisorsForBean(AbstractAdvisorAutoProxyCreator.java:78)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.wrapIfNecessary(AbstractAutoProxyCreator.java:341)
+	at org.springframework.aop.framework.autoproxy.AbstractAutoProxyCreator.postProcessAfterInitialization(AbstractAutoProxyCreator.java:293)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsAfterInitialization(AbstractAutowireCapableBeanFactory.java:455)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1808)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	... 36 common frames omitted
+"2023-09-25 12:50:24 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 12452 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 12:50:24 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 12:50:24 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 12:50:24 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 12:50:24 - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+""2023-09-25 12:50:25 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 12:50:25 - Starting service [Tomcat]
+""2023-09-25 12:50:25 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 12:50:25 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 12:50:25 - Root WebApplicationContext: initialization completed in 1526 ms
+""2023-09-25 12:50:25 - HikariPool-1 - Starting...
+""2023-09-25 12:50:25 - HikariPool-1 - Start completed.
+""2023-09-25 12:50:26 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 12:50:27 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 12:50:27 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 12:50:27 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 12:50:27 - Started GlobalExceptionEmpoyeeAppApplication in 4.283 seconds (JVM running for 5.321)
+""2023-09-25 12:51:44 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 12:53:54 -  @Around Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) Inside at : Mon Sep 25 12:53:54 IST 2023
+""2023-09-25 12:54:41 - @Around  Error Responce goes to   failed Argument array passed to proceed cannot be null at DateMon Sep 25 12:54:41 IST 2023
+""2023-09-25 12:56:25 - Application shutdown requested.
+""2023-09-25 12:56:25 - Stopping service [Tomcat]
+""2023-09-25 12:56:25 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-25 12:56:25 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 12:56:25 - HikariPool-1 - Shutdown initiated...
+""2023-09-25 12:56:25 - HikariPool-1 - Shutdown completed.
+""2023-09-25 12:56:34 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 6424 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 12:56:34 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 12:56:34 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 12:56:35 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 12:56:35 - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+""2023-09-25 12:56:36 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 12:56:36 - Starting service [Tomcat]
+""2023-09-25 12:56:36 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 12:56:36 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 12:56:36 - Root WebApplicationContext: initialization completed in 1462 ms
+""2023-09-25 12:56:36 - HikariPool-1 - Starting...
+""2023-09-25 12:56:36 - HikariPool-1 - Start completed.
+""2023-09-25 12:56:36 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 12:56:37 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 12:56:38 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 12:56:38 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 12:56:38 - Started GlobalExceptionEmpoyeeAppApplication in 4.004 seconds (JVM running for 4.879)
+""2023-09-25 12:58:32 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 12:58:44 -  @Around Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) Inside at : Mon Sep 25 12:58:44 IST 2023
+""2023-09-25 12:58:46 - @Around  Error Responce goes to   failed Argument array passed to proceed cannot be null at DateMon Sep 25 12:58:46 IST 2023
+""2023-09-25 13:01:56 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 9652 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 13:01:56 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 13:01:56 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 13:01:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 13:01:57 - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+""2023-09-25 13:01:57 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 13:01:57 - Starting service [Tomcat]
+""2023-09-25 13:01:57 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 13:01:57 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 13:01:57 - Root WebApplicationContext: initialization completed in 1420 ms
+""2023-09-25 13:01:57 - HikariPool-1 - Starting...
+""2023-09-25 13:01:58 - HikariPool-1 - Start completed.
+""2023-09-25 13:01:58 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 13:01:59 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 13:01:59 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 13:02:00 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 13:02:00 - Started GlobalExceptionEmpoyeeAppApplication in 4.035 seconds (JVM running for 5.039)
+""2023-09-25 13:02:25 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 13:02:34 - Before Request goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) started at : Mon Sep 25 13:02:34 IST 2023
+""2023-09-25 13:02:35 -  request : [Ljava.lang.Object;@3c3d161e
+""2023-09-25 13:03:04 -  @Around Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) Inside at : Mon Sep 25 13:03:04 IST 2023
+""2023-09-25 13:03:27 - @Around  Error Responce goes to   failed Argument array passed to proceed cannot be null at DateMon Sep 25 13:03:27 IST 2023
+""2023-09-25 13:04:08 -  After Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) ended at : Mon Sep 25 13:04:08 IST 2023
+""2023-09-25 13:09:06 - Application shutdown requested.
+""2023-09-25 13:09:06 - Stopping service [Tomcat]
+""2023-09-25 13:09:06 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-25 13:09:06 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 13:09:06 - HikariPool-1 - Shutdown initiated...
+""2023-09-25 13:09:06 - HikariPool-1 - Shutdown completed.
+""2023-09-25 13:09:22 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 3588 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 13:09:22 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 13:09:22 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 13:09:22 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 13:09:23 - Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+""2023-09-25 13:09:23 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 13:09:23 - Starting service [Tomcat]
+""2023-09-25 13:09:23 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 13:09:23 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 13:09:23 - Root WebApplicationContext: initialization completed in 1446 ms
+""2023-09-25 13:09:23 - HikariPool-1 - Starting...
+""2023-09-25 13:09:24 - HikariPool-1 - Start completed.
+""2023-09-25 13:09:24 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 13:09:25 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 13:09:25 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 13:09:25 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 13:09:25 - Started GlobalExceptionEmpoyeeAppApplication in 4.034 seconds (JVM running for 4.914)
+""2023-09-25 13:09:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 13:09:51 - Before Request goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) started at : Mon Sep 25 13:09:51 IST 2023
+""2023-09-25 13:09:51 -  request : [Ljava.lang.Object;@7828ec3e
+""2023-09-25 13:10:35 -  @Around Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) Inside at : Mon Sep 25 13:10:35 IST 2023
+""2023-09-25 13:10:54 -  Before Request goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) started at : Mon Sep 25 13:10:54 IST 2023
+""2023-09-25 13:10:55 -  request : [Ljava.lang.Object;@5e6b58a4
+""2023-09-25 13:11:38 -  AfterThrowing Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) ended at : Mon Sep 25 13:11:38 IST 2023
+""2023-09-25 13:11:39 -  request : [Ljava.lang.Object;@5e6b58a4
+""2023-09-25 13:11:39 - Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) error MSG: Empoyee name does  not correct or not be empty  ended at : Mon Sep 25 13:11:39 IST 2023
+""2023-09-25 13:11:49 - After Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) ended at : Mon Sep 25 13:11:49 IST 2023
+""2023-09-25 13:11:53 - @Around  Error Responce goes to   failed Empoyee name does  not correct or not be empty  at DateMon Sep 25 13:11:53 IST 2023
+""2023-09-25 13:11:58 -  After Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) ended at : Mon Sep 25 13:11:58 IST 2023
+""2023-09-25 14:07:04 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=54m10s220ms292µs900ns).
+""2023-09-25 17:58:28 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 14704 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 17:58:28 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 17:58:28 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 17:58:29 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 17:58:29 - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+""2023-09-25 17:58:30 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 17:58:30 - Starting service [Tomcat]
+""2023-09-25 17:58:30 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 17:58:30 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 17:58:30 - Root WebApplicationContext: initialization completed in 1774 ms
+""2023-09-25 17:58:30 - HikariPool-1 - Starting...
+""2023-09-25 17:58:30 - HikariPool-1 - Start completed.
+""2023-09-25 17:58:30 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 17:58:31 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 17:58:31 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 17:58:32 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 17:58:32 - Started GlobalExceptionEmpoyeeAppApplication in 4.348 seconds (JVM running for 5.483)
+""2023-09-25 18:00:31 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 18:07:09 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 15204 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 18:07:09 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 18:07:09 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 18:07:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 18:07:09 - Finished Spring Data repository scanning in 46 ms. Found 1 JPA repository interfaces.
+""2023-09-25 18:07:14 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 18:07:14 - Starting service [Tomcat]
+""2023-09-25 18:07:14 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 18:07:14 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 18:07:14 - Root WebApplicationContext: initialization completed in 5141 ms
+""2023-09-25 18:07:14 - HikariPool-1 - Starting...
+""2023-09-25 18:07:14 - HikariPool-1 - Start completed.
+""2023-09-25 18:07:14 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 18:07:15 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 18:07:16 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 18:07:16 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 18:07:16 - Started GlobalExceptionEmpoyeeAppApplication in 7.731 seconds (JVM running for 8.716)
+""2023-09-25 18:08:10 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 18:08:57 - Https Request Body: 
+""2023-09-25 18:08:58 - Https Reques Method : POST
+""2023-09-25 18:09:00 - Https Request URL : /employee/addEmp
+""2023-09-25 18:09:02 - Https Request Headers : org.apache.tomcat.util.http.NamesEnumerator@1a1076c9
+""2023-09-25 18:09:38 - addEmpoyee  RequestBody : org.apache.catalina.util.ParameterMap@7f1e1307 
+""2023-09-25 18:10:20 - Before Request goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) started at : Mon Sep 25 18:10:20 IST 2023
+""2023-09-25 18:10:21 -  request : [Ljava.lang.Object;@3fb2eb3
+""2023-09-25 18:10:58 - Https Request Body: 
+""2023-09-25 18:10:58 - Https Reques Method : POST
+""2023-09-25 18:10:58 - Https Request URL : /employee/addEmp
+""2023-09-25 18:10:58 - Https Request Headers : org.apache.tomcat.util.http.NamesEnumerator@6c301442
+""2023-09-25 18:10:59 - addEmployee  RequestBody : org.apache.catalina.util.ParameterMap@7f1e1307 
+""2023-09-25 18:11:05 -  Before Request goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) started at : Mon Sep 25 18:11:05 IST 2023
+""2023-09-25 18:11:05 -  request : [Ljava.lang.Object;@66255dcf
+""2023-09-25 18:11:32 - After Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) ended at : Mon Sep 25 18:11:32 IST 2023
+""2023-09-25 18:11:32 - Https responce Body: 
+""2023-09-25 18:11:32 - Https responce status code : 200
+""2023-09-25 18:11:32 - Https responce Headers : []
+""2023-09-25 18:11:32 - addEmployee  ResponceBody : Employee [empId=1, name=tarun, empDepatment=IT] 
+""2023-09-25 18:11:36 -  After Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) ended at : Mon Sep 25 18:11:36 IST 2023
+""2023-09-25 18:11:36 - Https responce Body: 
+""2023-09-25 18:11:36 - Https responce status code : 200
+""2023-09-25 18:11:36 - Https responce Headers : []
+""2023-09-25 18:11:36 - addEmpoyee  ResponceBody : <201 CREATED Created,Employee [empId=1, name=tarun, empDepatment=IT],[]> 
+""2023-09-25 18:13:02 - Application shutdown requested.
+""2023-09-25 18:13:02 - Stopping service [Tomcat]
+""2023-09-25 18:13:02 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-25 18:13:03 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 18:13:03 - HikariPool-1 - Shutdown initiated...
+""2023-09-25 18:13:03 - HikariPool-1 - Shutdown completed.
+""2023-09-25 18:13:28 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 9120 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 18:13:28 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 18:13:28 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 18:13:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 18:13:28 - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+""2023-09-25 18:13:54 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 18:13:55 - Starting service [Tomcat]
+""2023-09-25 18:13:55 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 18:14:00 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 18:14:00 - Root WebApplicationContext: initialization completed in 32480 ms
+""2023-09-25 18:14:06 - HikariPool-1 - Starting...
+""2023-09-25 18:14:21 - HikariPool-1 - Start completed.
+""2023-09-25 18:14:22 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 18:15:28 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 18:15:56 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 18:16:37 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 18:16:45 - Started GlobalExceptionEmpoyeeAppApplication in 197.542 seconds (JVM running for 198.557)
+""2023-09-25 18:18:13 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 18:18:13 - Https Request Body: 
+""2023-09-25 18:18:13 - Https Reques Method : POST
+""2023-09-25 18:18:13 - Https Request URL : /employee/addEmp
+""2023-09-25 18:18:13 - Https Request Headers : org.apache.tomcat.util.http.NamesEnumerator@b8f54
+""2023-09-25 18:18:13 - addEmpoyee  RequestBody : org.apache.catalina.util.ParameterMap@6a2d15bd 
+""2023-09-25 18:18:13 - Before Request goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) started at : Mon Sep 25 18:18:13 IST 2023
+""2023-09-25 18:18:13 -  request : [Ljava.lang.Object;@200939e
+""2023-09-25 18:18:13 - Https Request Body: 
+""2023-09-25 18:18:13 - Https Reques Method : POST
+""2023-09-25 18:18:13 - Https Request URL : /employee/addEmp
+""2023-09-25 18:18:13 - Https Request Headers : org.apache.tomcat.util.http.NamesEnumerator@23744f63
+""2023-09-25 18:18:13 - addEmployee  RequestBody : org.apache.catalina.util.ParameterMap@6a2d15bd 
+""2023-09-25 18:18:13 -  Before Request goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) started at : Mon Sep 25 18:18:13 IST 2023
+""2023-09-25 18:18:13 -  request : [Ljava.lang.Object;@117e6c05
+""2023-09-25 18:18:13 - After Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) ended at : Mon Sep 25 18:18:13 IST 2023
+""2023-09-25 18:18:13 - Https responce Body: 
+""2023-09-25 18:18:13 - Https responce status code : 200
+""2023-09-25 18:18:13 - Https responce Headers : []
+""2023-09-25 18:18:13 - addEmployee  ResponceBody : Employee [empId=1, name=RAM, empDepatment=CS] 
+""2023-09-25 18:18:13 -  After Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) ended at : Mon Sep 25 18:18:13 IST 2023
+""2023-09-25 18:18:13 - Https responce Body: 
+""2023-09-25 18:18:13 - Https responce status code : 200
+""2023-09-25 18:18:13 - Https responce Headers : []
+""2023-09-25 18:18:13 - addEmpoyee  ResponceBody : <201 CREATED Created,Employee [empId=1, name=RAM, empDepatment=CS],[]> 
+""2023-09-25 18:29:50 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 5024 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 18:29:50 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 18:29:50 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 18:29:51 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 18:29:51 - Finished Spring Data repository scanning in 45 ms. Found 1 JPA repository interfaces.
+""2023-09-25 18:29:51 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 18:29:51 - Starting service [Tomcat]
+""2023-09-25 18:29:51 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 18:29:51 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 18:29:51 - Root WebApplicationContext: initialization completed in 1354 ms
+""2023-09-25 18:29:51 - HikariPool-1 - Starting...
+""2023-09-25 18:29:52 - HikariPool-1 - Start completed.
+""2023-09-25 18:29:52 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 18:29:53 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 18:29:53 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 18:29:53 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 18:29:53 - Started GlobalExceptionEmpoyeeAppApplication in 3.919 seconds (JVM running for 4.894)
+""2023-09-25 18:30:23 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 18:30:23 - Https Request Body: 
+""2023-09-25 18:30:23 - Https Reques Method : POST
+""2023-09-25 18:30:23 - Https Request URL : /employee/addEmp
+""2023-09-25 18:30:23 - Https Request Headers :content-type
+""2023-09-25 18:30:23 - Https Request Headers :user-agent
+""2023-09-25 18:30:23 - Https Request Headers :accept
+""2023-09-25 18:30:23 - Https Request Headers :cache-control
+""2023-09-25 18:30:23 - Https Request Headers :postman-token
+""2023-09-25 18:30:23 - Https Request Headers :host
+""2023-09-25 18:30:23 - Https Request Headers :accept-encoding
+""2023-09-25 18:30:23 - Https Request Headers :connection
+""2023-09-25 18:30:23 - Https Request Headers :content-length
+""2023-09-25 18:30:23 - addEmpoyee  RequestBody : 
+""2023-09-25 18:30:23 - Before Request goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) started at : Mon Sep 25 18:30:23 IST 2023
+""2023-09-25 18:30:23 -  request : [Ljava.lang.Object;@51051ae3
+""2023-09-25 18:30:23 - Https Request Body: 
+""2023-09-25 18:30:23 - Https Reques Method : POST
+""2023-09-25 18:30:23 - Https Request URL : /employee/addEmp
+""2023-09-25 18:30:23 - Https Request Headers :content-type
+""2023-09-25 18:30:23 - Https Request Headers :user-agent
+""2023-09-25 18:30:23 - Https Request Headers :accept
+""2023-09-25 18:30:23 - Https Request Headers :cache-control
+""2023-09-25 18:30:23 - Https Request Headers :postman-token
+""2023-09-25 18:30:23 - Https Request Headers :host
+""2023-09-25 18:30:23 - Https Request Headers :accept-encoding
+""2023-09-25 18:30:23 - Https Request Headers :connection
+""2023-09-25 18:30:23 - Https Request Headers :content-length
+""2023-09-25 18:30:23 - addEmployee  RequestBody : 
+""2023-09-25 18:30:23 -  Before Request goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) started at : Mon Sep 25 18:30:23 IST 2023
+""2023-09-25 18:30:23 -  request : [Ljava.lang.Object;@1775db05
+""2023-09-25 18:30:23 - After Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) ended at : Mon Sep 25 18:30:23 IST 2023
+""2023-09-25 18:30:23 - Https responce Body: 
+""2023-09-25 18:30:23 - Https responce status code : 200
+""2023-09-25 18:30:23 - Https responce Headers : []
+""2023-09-25 18:30:23 - addEmployee  ResponceBody : Employee [empId=1, name=RAM, empDepatment=CS] 
+""2023-09-25 18:30:23 -  After Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) ended at : Mon Sep 25 18:30:23 IST 2023
+""2023-09-25 18:30:23 - Https responce Body: 
+""2023-09-25 18:30:23 - Https responce status code : 200
+""2023-09-25 18:30:23 - Https responce Headers : []
+""2023-09-25 18:30:23 - addEmpoyee  ResponceBody : <201 CREATED Created,Employee [empId=1, name=RAM, empDepatment=CS],[]> 
+""2023-09-25 18:32:36 - Application shutdown requested.
+""2023-09-25 18:32:37 - Stopping service [Tomcat]
+""2023-09-25 18:32:37 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-25 18:32:37 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 18:32:37 - HikariPool-1 - Shutdown initiated...
+""2023-09-25 18:32:37 - HikariPool-1 - Shutdown completed.
+""2023-09-25 18:32:44 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 15660 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 18:32:44 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 18:32:44 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 18:32:45 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 18:32:45 - Finished Spring Data repository scanning in 44 ms. Found 1 JPA repository interfaces.
+""2023-09-25 18:32:45 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 18:32:45 - Starting service [Tomcat]
+""2023-09-25 18:32:45 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 18:32:45 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 18:32:45 - Root WebApplicationContext: initialization completed in 1399 ms
+""2023-09-25 18:32:45 - HikariPool-1 - Starting...
+""2023-09-25 18:32:46 - HikariPool-1 - Start completed.
+""2023-09-25 18:32:46 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 18:32:47 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 18:32:47 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 18:32:47 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 18:32:47 - Started GlobalExceptionEmpoyeeAppApplication in 3.945 seconds (JVM running for 4.803)
+""2023-09-25 18:33:21 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 18:33:21 - Https Request Body: 
+""2023-09-25 18:33:21 - Https Reques Method : POST
+""2023-09-25 18:33:21 - Https Request URL : /employee/addEmp
+""2023-09-25 18:33:21 - Https Request Headers :content-type
+""2023-09-25 18:33:21 - Https Request Headers :user-agent
+""2023-09-25 18:33:21 - Https Request Headers :accept
+""2023-09-25 18:33:21 - Https Request Headers :cache-control
+""2023-09-25 18:33:21 - Https Request Headers :postman-token
+""2023-09-25 18:33:21 - Https Request Headers :host
+""2023-09-25 18:33:21 - Https Request Headers :accept-encoding
+""2023-09-25 18:33:21 - Https Request Headers :connection
+""2023-09-25 18:33:21 - Https Request Headers :content-length
+""2023-09-25 18:33:21 - addEmpoyee  RequestBody : 
+""2023-09-25 18:33:21 - Before Request goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) started at : Mon Sep 25 18:33:21 IST 2023
+""2023-09-25 18:33:21 -  request : [Ljava.lang.Object;@15bda781
+""2023-09-25 18:33:21 - Https Request Body: 
+""2023-09-25 18:33:21 - Https Reques Method : POST
+""2023-09-25 18:33:21 - Https Request URL : /employee/addEmp
+""2023-09-25 18:33:21 - Https Request Headers :content-type
+""2023-09-25 18:33:21 - Https Request Headers :user-agent
+""2023-09-25 18:33:21 - Https Request Headers :accept
+""2023-09-25 18:33:21 - Https Request Headers :cache-control
+""2023-09-25 18:33:21 - Https Request Headers :postman-token
+""2023-09-25 18:33:21 - Https Request Headers :host
+""2023-09-25 18:33:21 - Https Request Headers :accept-encoding
+""2023-09-25 18:33:21 - Https Request Headers :connection
+""2023-09-25 18:33:21 - Https Request Headers :content-length
+""2023-09-25 18:33:21 - addEmployee  RequestBody : 
+""2023-09-25 18:33:21 -  Before Request goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) started at : Mon Sep 25 18:33:21 IST 2023
+""2023-09-25 18:33:21 -  request : [Ljava.lang.Object;@43552690
+""2023-09-25 18:33:21 - After Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) ended at : Mon Sep 25 18:33:21 IST 2023
+""2023-09-25 18:33:21 - Https responce Body: 
+""2023-09-25 18:33:21 - Https responce status code : 200
+""2023-09-25 18:33:21 - Https responce Headers : []
+""2023-09-25 18:33:21 - addEmployee  ResponceBody : Employee [empId=1, name=RAM, empDepatment=CS] 
+""2023-09-25 18:33:21 -  After Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) ended at : Mon Sep 25 18:33:21 IST 2023
+""2023-09-25 18:33:21 - Https responce Body: 
+""2023-09-25 18:33:21 - Https responce status code : 200
+""2023-09-25 18:33:21 - Https responce Headers : []
+""2023-09-25 18:33:21 - addEmpoyee  ResponceBody : <201 CREATED Created,Employee [empId=1, name=RAM, empDepatment=CS],[]> 
+""2023-09-25 18:35:59 - Application shutdown requested.
+""2023-09-25 18:35:59 - Stopping service [Tomcat]
+""2023-09-25 18:35:59 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-25 18:35:59 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 18:35:59 - HHH000478: Unsuccessful: drop sequence if exists hibernate_sequence
+""2023-09-25 18:35:59 - Database is already closed (to disable automatic closing at VM shutdown, add ";DB_CLOSE_ON_EXIT=FALSE" to the db URL) [90121-214]
+""2023-09-25 18:35:59 - Invocation of destroy method failed on bean with name 'entityManagerFactory': org.hibernate.exception.JDBCConnectionException: Unable to release JDBC Connection used for DDL execution
+""2023-09-25 18:35:59 - HikariPool-1 - Shutdown initiated...
+""2023-09-25 18:35:59 - HikariPool-1 - Shutdown completed.
+""2023-09-25 18:36:08 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 6164 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 18:36:08 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 18:36:08 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 18:36:09 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 18:36:09 - Finished Spring Data repository scanning in 43 ms. Found 1 JPA repository interfaces.
+""2023-09-25 18:36:09 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 18:36:09 - Starting service [Tomcat]
+""2023-09-25 18:36:09 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 18:36:09 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 18:36:09 - Root WebApplicationContext: initialization completed in 1359 ms
+""2023-09-25 18:36:09 - HikariPool-1 - Starting...
+""2023-09-25 18:36:10 - HikariPool-1 - Start completed.
+""2023-09-25 18:36:10 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 18:36:11 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 18:36:11 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 18:36:11 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 18:36:11 - Started GlobalExceptionEmpoyeeAppApplication in 3.94 seconds (JVM running for 4.807)
+""2023-09-25 18:36:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 18:36:39 - Https Request Body: 
+""2023-09-25 18:36:39 - Https Reques Method : POST
+""2023-09-25 18:36:39 - Https Request URL : /employee/addEmp
+""2023-09-25 18:36:39 - Https Request Headers :content-type
+""2023-09-25 18:36:39 - Https Request Headers :user-agent
+""2023-09-25 18:36:39 - Https Request Headers :accept
+""2023-09-25 18:36:39 - Https Request Headers :cache-control
+""2023-09-25 18:36:39 - Https Request Headers :postman-token
+""2023-09-25 18:36:39 - Https Request Headers :host
+""2023-09-25 18:36:39 - Https Request Headers :accept-encoding
+""2023-09-25 18:36:39 - Https Request Headers :connection
+""2023-09-25 18:36:39 - Https Request Headers :content-length
+""2023-09-25 18:36:39 - addEmpoyee  RequestBody : 
+""2023-09-25 18:36:39 - Before Request goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) started at : Mon Sep 25 18:36:39 IST 2023
+""2023-09-25 18:36:39 -  request : [Ljava.lang.Object;@9ea2af3
+""2023-09-25 18:36:39 - Https Request Body: 
+""2023-09-25 18:36:39 - Https Reques Method : POST
+""2023-09-25 18:36:39 - Https Request URL : /employee/addEmp
+""2023-09-25 18:36:39 - Https Request Headers :content-type
+""2023-09-25 18:36:39 - Https Request Headers :user-agent
+""2023-09-25 18:36:39 - Https Request Headers :accept
+""2023-09-25 18:36:39 - Https Request Headers :cache-control
+""2023-09-25 18:36:39 - Https Request Headers :postman-token
+""2023-09-25 18:36:39 - Https Request Headers :host
+""2023-09-25 18:36:39 - Https Request Headers :accept-encoding
+""2023-09-25 18:36:39 - Https Request Headers :connection
+""2023-09-25 18:36:39 - Https Request Headers :content-length
+""2023-09-25 18:36:39 - addEmployee  RequestBody : 
+""2023-09-25 18:36:39 -  Before Request goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) started at : Mon Sep 25 18:36:39 IST 2023
+""2023-09-25 18:36:39 -  request : [Ljava.lang.Object;@cf21633
+""2023-09-25 18:36:39 - After Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) ended at : Mon Sep 25 18:36:39 IST 2023
+""2023-09-25 18:36:39 - Https responce Body: 
+""2023-09-25 18:36:39 - Https responce status code : 200
+""2023-09-25 18:36:39 - Https responce Headers : []
+""2023-09-25 18:36:39 - addEmployee  ResponceBody : Employee [empId=1, name=RAM, empDepatment=CS] 
+""2023-09-25 18:36:39 -  After Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) ended at : Mon Sep 25 18:36:39 IST 2023
+""2023-09-25 18:36:39 - Https responce Body: 
+""2023-09-25 18:36:39 - Https responce status code : 200
+""2023-09-25 18:36:39 - Https responce Headers : []
+""2023-09-25 18:36:39 - addEmpoyee  ResponceBody : <201 CREATED Created,Employee [empId=1, name=RAM, empDepatment=CS],[]> 
+""2023-09-25 18:37:36 - Https Request Body: 
+""2023-09-25 18:37:37 - Https Reques Method : POST
+""2023-09-25 18:37:37 - Https Request URL : /employee/addEmp
+""2023-09-25 18:37:37 - Https Request Headers :content-type
+""2023-09-25 18:37:37 - Https Request Headers :user-agent
+""2023-09-25 18:37:37 - Https Request Headers :accept
+""2023-09-25 18:37:37 - Https Request Headers :cache-control
+""2023-09-25 18:37:37 - Https Request Headers :postman-token
+""2023-09-25 18:37:37 - Https Request Headers :host
+""2023-09-25 18:37:37 - Https Request Headers :accept-encoding
+""2023-09-25 18:37:37 - Https Request Headers :connection
+""2023-09-25 18:37:37 - Https Request Headers :content-length
+""2023-09-25 18:37:38 - addEmpoyee  RequestBody : 
+""2023-09-25 18:48:57 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 10720 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 18:48:57 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 18:48:57 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 18:48:57 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 18:48:57 - Finished Spring Data repository scanning in 54 ms. Found 1 JPA repository interfaces.
+""2023-09-25 18:49:20 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 14584 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 18:49:20 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 18:49:20 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 18:49:21 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 18:49:21 - Finished Spring Data repository scanning in 47 ms. Found 1 JPA repository interfaces.
+""2023-09-25 18:49:47 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 18:49:47 - Starting service [Tomcat]
+""2023-09-25 18:49:47 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 18:49:53 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 18:49:53 - Root WebApplicationContext: initialization completed in 32942 ms
+""2023-09-25 18:50:01 - HikariPool-1 - Starting...
+""2023-09-25 18:50:14 - HikariPool-1 - Start completed.
+""2023-09-25 18:50:15 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 18:50:27 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 14432 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-25 18:50:27 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-25 18:50:27 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-25 18:50:28 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-25 18:50:28 - Finished Spring Data repository scanning in 48 ms. Found 1 JPA repository interfaces.
+""2023-09-25 18:50:30 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-25 18:50:30 - Starting service [Tomcat]
+""2023-09-25 18:50:30 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-25 18:50:30 - Initializing Spring embedded WebApplicationContext
+""2023-09-25 18:50:30 - Root WebApplicationContext: initialization completed in 2477 ms
+""2023-09-25 18:50:30 - HikariPool-1 - Starting...
+""2023-09-25 18:50:30 - HikariPool-1 - Start completed.
+""2023-09-25 18:50:30 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-25 18:50:31 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-25 18:50:32 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-25 18:50:32 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-25 18:50:32 - Started GlobalExceptionEmpoyeeAppApplication in 5.139 seconds (JVM running for 6.036)
+""2023-09-25 18:50:45 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-25 18:50:45 - Https Request Body: 
+""2023-09-25 18:50:45 - Https Reques Method : POST
+""2023-09-25 18:50:45 - Https Request URL : /employee/addEmp
+""2023-09-25 18:50:45 - Https Request Headers :content-type
+""2023-09-25 18:50:45 - Https Request Headers :user-agent
+""2023-09-25 18:50:45 - Https Request Headers :accept
+""2023-09-25 18:50:45 - Https Request Headers :cache-control
+""2023-09-25 18:50:45 - Https Request Headers :postman-token
+""2023-09-25 18:50:45 - Https Request Headers :host
+""2023-09-25 18:50:45 - Https Request Headers :accept-encoding
+""2023-09-25 18:50:45 - Https Request Headers :connection
+""2023-09-25 18:50:45 - Https Request Headers :content-length
+""2023-09-25 18:50:45 - addEmpoyee  RequestBody : 
+""2023-09-25 18:50:45 - Before Request goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) started at : Mon Sep 25 18:50:45 IST 2023
+""2023-09-25 18:50:45 -  request : [Ljava.lang.Object;@7ae8d38d
+""2023-09-25 18:50:45 - Https Request Body: 
+""2023-09-25 18:50:45 - Https Reques Method : POST
+""2023-09-25 18:50:45 - Https Request URL : /employee/addEmp
+""2023-09-25 18:50:45 - Https Request Headers :content-type
+""2023-09-25 18:50:45 - Https Request Headers :user-agent
+""2023-09-25 18:50:45 - Https Request Headers :accept
+""2023-09-25 18:50:45 - Https Request Headers :cache-control
+""2023-09-25 18:50:45 - Https Request Headers :postman-token
+""2023-09-25 18:50:45 - Https Request Headers :host
+""2023-09-25 18:50:45 - Https Request Headers :accept-encoding
+""2023-09-25 18:50:45 - Https Request Headers :connection
+""2023-09-25 18:50:45 - Https Request Headers :content-length
+""2023-09-25 18:50:45 - addEmployee  RequestBody : 
+""2023-09-25 18:50:45 -  Before Request goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) started at : Mon Sep 25 18:50:45 IST 2023
+""2023-09-25 18:50:45 -  request : [Ljava.lang.Object;@4e29c892
+""2023-09-25 18:50:45 - After Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) ended at : Mon Sep 25 18:50:45 IST 2023
+""2023-09-25 18:50:45 - Https responce Body: 
+""2023-09-25 18:50:45 - Https responce status code : 200
+""2023-09-25 18:50:45 - Https responce Headers : []
+""2023-09-25 18:50:45 - addEmployee  ResponceBody : Employee [empId=1, name=Pawan, empDepatment=IT] 
+""2023-09-25 18:50:45 -  After Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) ended at : Mon Sep 25 18:50:45 IST 2023
+""2023-09-25 18:50:45 - Https responce Body: 
+""2023-09-25 18:50:45 - Https responce status code : 200
+""2023-09-25 18:50:45 - Https responce Headers : []
+""2023-09-25 18:50:45 - addEmpoyee  ResponceBody : <201 CREATED Created,Employee [empId=1, name=Pawan, empDepatment=IT],[]> 
+"

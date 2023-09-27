@@ -1,0 +1,31 @@
+"2023-09-22 18:34:34 - Starting GlobalExceptionEmpoyeeAppApplication using Java 17.0.7 on DESKTOP-31SS8BM with PID 14068 (E:\Projects\GlobalExceptionEmpoyee_App\target\classes started by rcadmin in E:\Projects\GlobalExceptionEmpoyee_App)
+""2023-09-22 18:34:34 - Running with Spring Boot v2.7.16-SNAPSHOT, Spring v5.3.30
+""2023-09-22 18:34:34 - No active profile set, falling back to 1 default profile: "default"
+""2023-09-22 18:34:34 - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+""2023-09-22 18:34:34 - Finished Spring Data repository scanning in 40 ms. Found 1 JPA repository interfaces.
+""2023-09-22 18:34:35 - Tomcat initialized with port(s): 8182 (http)
+""2023-09-22 18:34:35 - Starting service [Tomcat]
+""2023-09-22 18:34:35 - Starting Servlet engine: [Apache Tomcat/9.0.80]
+""2023-09-22 18:34:35 - Initializing Spring embedded WebApplicationContext
+""2023-09-22 18:34:35 - Root WebApplicationContext: initialization completed in 1296 ms
+""2023-09-22 18:34:35 - HikariPool-1 - Starting...
+""2023-09-22 18:34:35 - HikariPool-1 - Start completed.
+""2023-09-22 18:34:35 - H2 console available at '/h2-console'. Database available at 'jdbc:h2:mem:dcbapp'
+""2023-09-22 18:34:36 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-22 18:34:37 - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+""2023-09-22 18:34:37 - Tomcat started on port(s): 8182 (http) with context path ''
+""2023-09-22 18:34:37 - Started GlobalExceptionEmpoyeeAppApplication in 3.63 seconds (JVM running for 4.333)
+""2023-09-22 18:36:39 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+""2023-09-22 18:36:39 - Before Request goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) started at : Fri Sep 22 18:36:39 IST 2023
+""2023-09-22 18:36:39 -  request : [Ljava.lang.Object;@70b527e7
+""2023-09-22 18:36:39 -  Before Request goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) started at : Fri Sep 22 18:36:39 IST 2023
+""2023-09-22 18:36:39 -  request : [Ljava.lang.Object;@28c62c26
+""2023-09-22 18:36:39 - After Responce goes to Employee com.example.demo.service.EmpoyeeServiceImp.addEmployee(Employee) ended at : Fri Sep 22 18:36:39 IST 2023
+""2023-09-22 18:36:39 -  After Responce goes to ResponseEntity com.example.demo.controller.EmpoyeeController.addEmpoyee(Employee) ended at : Fri Sep 22 18:36:39 IST 2023
+""2023-09-22 18:39:24 - Application shutdown requested.
+""2023-09-22 18:39:24 - Stopping service [Tomcat]
+""2023-09-22 18:39:24 - Destroying Spring FrameworkServlet 'dispatcherServlet'
+""2023-09-22 18:39:24 - Closing JPA EntityManagerFactory for persistence unit 'default'
+""2023-09-22 18:39:24 - HikariPool-1 - Shutdown initiated...
+""2023-09-22 18:39:24 - HikariPool-1 - Shutdown completed.
+"
