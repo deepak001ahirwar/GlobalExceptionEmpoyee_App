@@ -13,14 +13,18 @@ import com.example.demo.repo.EmpCURDRepo;
 @Service
 public class EmpoyeeServiceImp implements EmpoyeeServiceInterface {
 
-	@Autowired
+	//@Autowired
 	private EmpCURDRepo empRepo;
+
+	public EmpoyeeServiceImp(EmpCURDRepo empRepo) {
+		this.empRepo = empRepo;
+	}
 
 	@Override
 	public Employee addEmployee(Employee emp) {
 
 		if (emp.getName().isEmpty() || emp.getName().length() == 0) {
-			throw new EmptyInputException("Empoyee name does  not correct or not be empty ", "Bad request ",
+			throw new EmptyInputException("Empoyee name does  not correct or not be empty", "Bad request",
 					new Object[] { emp });
 		}
 
@@ -68,11 +72,11 @@ public class EmpoyeeServiceImp implements EmpoyeeServiceInterface {
 
 	@Override
 	public String deleteEmpbyId(Long empId) {
-		
+
 		Employee originalEmp = empRepo.findById(empId)
 				.orElseThrow(() -> new ResourceNotFoundException("Empoyee does not exits ", "Resource not found ",
 						new Object[] { empId }));
-		
+
 		empRepo.deleteById(empId);
 		return "empId " + empId + " has been sucessfully delete ";
 	}
